@@ -1,0 +1,187 @@
+.page {
+    height: 480px;
+    width: 270px;
+    margin: auto;
+    border: 3px black solid;
+    overflow: auto;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.burger {
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px black solid;
+}
+
+.search {
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px black solid;
+}
+
+.categories {
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.categories div {
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px black solid;
+}
+
+.tendances {
+    height: 230px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.tendances div {
+    height: 110px;
+    width: 110px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px black solid;
+}
+
+.product {
+    height: 230px;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.product div {
+    height: 55px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px black solid;
+    margin-bottom: 10px;
+}
+
+.article {
+    height: 180px;
+    width: 180px;
+    border: 1px black solid;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.caroussel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+}
+
+.cercle {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 1px black solid;
+    margin: 3px;
+}
+
+.title {
+    width: 150px;
+    height: 30px;
+    border: 1px black solid;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 180px;
+    margin: auto;
+}
+
+.price {
+    width: 40px;
+    height: 20px;
+    border: 1px black solid;
+}
+
+.similaires {
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+    margin-top: 15px;
+}
+
+.similaires div {
+    height: 70px;
+    width: 70px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 1px black solid;
+}
+
+.separate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+div .retour {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 1px black solid;
+}
+
+#logo {
+    width: auto;
+    height: 45px;
+}
+
+h3 {
+    margin-left: 20px;
+    width: auto;
+    height: 10px;
+}
+
+p {
+    font-size: small;
+}
+
+ol {
+    font-size: small;
+}
+
+.vins {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+    margin: auto;
+    top: 50%;
+}

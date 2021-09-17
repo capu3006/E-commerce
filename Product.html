@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Style.css" />
+    <meta Name="Author" Content="Robin MAHE">
+    <meta Name="Generator" Content="Site réalisé avec Sublime Text">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b874999ce5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="page">
+
+        <main>
+            <div>
+                <a href="Search.html">
+                    <div class="retour"></div>
+                </a>
+            </div>
+            <div class="article"></div>
+            <div class="caroussel">
+                <div class="cercle"></div>
+                <div class="cercle"></div>
+                <div class="cercle"></div>
+                <div class="cercle"></div>
+                <div class="cercle"></div>
+            </div>
+            <div class="title"></div>
+            <div class="info">
+                <div class="price"></div>
+                <div class="notation">
+                    <i class="fas fa-star" style="color:#fb9e1d"></i>
+                    <i class="fas fa-star" style="color:#fb9e1d"></i>
+                    <i class="fas fa-star-half-alt" style="color:#fb9e1d"></i>
+                    <i class="far fa-star" style="color:#fb9e1d"></i>
+                    <i class="far fa-star" style="color:#fb9e1d"></i>
+                </div>
+            </div>
+            <div class="container">
+                <div class="description"></div>
+                <div class="selection">
+                    <div class="quantite"></div>
+                    <div class="payer"></div>
+                </div>
+            </div>
+            <div class="separate">
+                <div>Description</div>
+                <div>
+                    <div>Quantité : <span id="quantity"></span> </div>
+                    <div>
+                        <button id="plus" onclick="plus()">+</button>
+                        <button id="moins" onclick="moins()">-</button>
+                    </div>
+                    <div>Prix total :<span id="TotalPrice"></span></div>
+
+                    <script>
+                        // const Quantity = document.querySelector('#quantity');
+                        var Quantity = 1;
+                        const IndividualPrice = 3.555;
+                        const TotalPrice = Quantity * IndividualPrice;
+                        const Result = Math.round(TotalPrice * 100) / 100;
+                        document.getElementById('quantity').innerHTML = Quantity;
+                        document.getElementById('TotalPrice').innerHTML = Result;
+
+                        function plus() {
+                            Quantity = Quantity + 1;
+                            const TotalPrice = Quantity * IndividualPrice;
+                            const Result = Math.round(TotalPrice * 100) / 100;
+                            document.getElementById('quantity').innerHTML = Quantity;
+                            document.getElementById('TotalPrice').innerHTML = Result;
+                        }
+
+                        function moins() {
+                            if (Quantity > 0) {
+                                Quantity = Quantity - 1;
+                                const TotalPrice = Quantity * IndividualPrice;
+                                const Result = Math.round(TotalPrice * 100) / 100;
+                                document.getElementById('quantity').innerHTML = Quantity;
+                                document.getElementById('TotalPrice').innerHTML = Result;
+                            } else {
+                                const TotalPrice = Quantity * IndividualPrice;
+                                const Result = Math.round(TotalPrice * 100) / 100;
+                                document.getElementById('quantity').innerHTML = Quantity;
+                                document.getElementById('TotalPrice').innerHTML = Result;
+                            }
+
+                        }
+                    </script>
+                </div>
+            </div>
+
+
+            <section class="similaires">
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+    </div>
+</body>
+
+</html>
